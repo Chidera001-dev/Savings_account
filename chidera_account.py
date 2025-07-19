@@ -14,17 +14,17 @@ while True:
         case "2":
             amount = float(input("Enter amount to deposit: "))
             if amount < 0:
-                print("Amountbmust be more than zero.")
+                print("Amount must be more than zero.")
             else:
                 balance += amount
                 print(f"You deposited ${amount}. New balance is : ${balance}")
         case "3":
-            amount = float(input("Enter amount to withdraw: "))
-            if amount > balance :
+            amount_withdrew = float(input("Enter amount to withdraw: "))
+            if amount_withdrew > balance :
                 print("Insufficient funds!!!")
             else:
-                balance -= amount
-                print(f"Your withdrew ${amount}. New balance is ${balance}")
+                balance -= amount_withdrew
+                print(f"Your withdrew ${amount_withdrew}. New balance is ${balance}")
         case "4":
             print(f"Thank you for banking with us, {name}!")
             break
